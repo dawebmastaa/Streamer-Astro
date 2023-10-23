@@ -1,0 +1,16 @@
+---
+const { href, title, body, image } = Astro.props
+---
+<li class="bg-white rounded-md shadow-md hover:shadow-xl transition">
+  <a href={`/blog/${href}`}>
+    <div class="flex flex-col h-full gap-y-2 p-6">
+      <h2 class="font-semibold text-xl pr-4 pt-2">
+        {title}
+      </h2>
+      <p>
+        {body}
+      </p>
+     <img src={image} />
+    </div>
+  </a>
+</li>

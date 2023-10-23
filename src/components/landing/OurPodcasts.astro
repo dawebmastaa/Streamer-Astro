@@ -1,0 +1,65 @@
+---
+import { episodes } from "../../data/episodes.json";
+---
+
+<section>
+  <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24 scroll-mt-24" id="episode">
+    <div class="max-w-3xl">
+      <span class="text-xs font-bold tracking-wide uppercase text-zinc-500"
+        >Episodes</span
+      >
+      <p class="mt-8 text-4xl font-semibold tracking-tight text-zinc-900">
+        Embark on a journey through our podcasts,
+        <span class="md:block md:text-zinc-500">
+          and you'll find yourself thoroughly engrossed before you know it.</span
+        >
+      </p>
+      <p class="mt-4 text-base text-zinc-500">
+        Delve into captivating conversations and dive deep into the world of our
+        podcasts
+      </p>
+    </div>
+
+    <ol
+      role="list"
+      class="grid mt-12 lg:mt-14 grid-cols-1 lg:grid-cols-2 gap-2">
+      {
+        episodes.map((template) => (
+          <>
+            <li class="bg-audio p-8 rounded-3xl">
+              <div class="sm:flex">
+                <div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
+                  <img
+                    class="h-32 w-full rounded-xl object-cover bg-center sm:w-32"
+                    src={template.image}
+                    alt={template.name}
+                  />
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-zinc-900">
+                    {template.name}
+                  </h4>
+                  <p class="mt-1 text-sm text-zinc-500">
+                    {template.episode} - {template.season}
+                  </p>
+                  <p class="mt-2 text-sm text-zinc-600">
+                    {template.description}
+                  </p>
+                </div>
+              </div>
+
+              <div class=" mt-8">
+                <audio controls class="w-full">
+                  <source
+                    src="https://www.coothead.co.uk/audio/You-Cant-Always-Get-What-You-Want.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio>
+              </div>
+            </li>
+          </>
+        ))
+      }
+    </ol>
+  </div>
+</section>

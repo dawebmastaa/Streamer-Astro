@@ -1,0 +1,47 @@
+---
+import { features } from "../../data/features.json";
+---
+
+<section>
+  <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
+    <div class="max-w-3xl">
+      <span class="text-xs font-bold tracking-wide uppercase text-zinc-500"
+        >features</span
+      >
+      <p class="mt-8 text-4xl font-semibold tracking-tight text-zinc-900">
+        Embark on a journey through our podcasts,
+        <span class="md:block md:text-zinc-500">
+          and you'll find yourself thoroughly engrossed before you know it.</span
+        >
+      </p>
+      <p class="mt-4 text-base text-zinc-500">
+        Delve into captivating conversations and dive deep into the world of our
+        podcasts
+      </p>
+    </div>
+
+    <ol
+      role="list"
+      class="grid mt-12 lg:mt-14 grid-cols-1 lg:grid-cols-4 gap-4">
+      {
+        features.map((template) => (
+          <>
+            <li>
+              <div class="sm:flex">
+                <div>
+                  <h4 class="text-lg font-semibold text-zinc-900">
+                    {template.name}
+                  </h4>
+
+                  <p class="mt-2 text-sm text-zinc-600">
+                    {template.description}
+                  </p>
+                </div>
+              </div>
+            </li>
+          </>
+        ))
+      }
+    </ol>
+  </div>
+</section>

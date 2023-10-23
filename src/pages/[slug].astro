@@ -1,0 +1,20 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getAllPages } from "../lib/cosmic"
+
+export async function getStaticPaths() {
+  const response = await getAllPages()
+
+  return response.map((page) => {
+    return {
+      params: { slug: page.slug },
+      props: { page },
+    };
+  });
+}
+
+const { page } = Astro.props;
+---
+<BaseLayout>
+    <Fragment set:html={page.metadata.page_content} />
+  </BaseLayout>
