@@ -17,7 +17,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
 <AstroSeo
   title="Rule The Web | Home"
   description="Your home page description goes here"
-  canonical="https://streamer.lexingtonthemes.com"
+  canonical={import.meta.env.SITE}
   openGraph={{
     url: "https://streamer.lexingtonthemes.com",
     title: "Open Graph Title",
@@ -49,7 +49,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
   }}
 />
 <BaseLayout>
-  <Hero bgimage="newhero4.jpg" />
+  <Hero bgimage="/newhero4.jpg" />
   <Features />
   <Testimonials />
   <Posts />
