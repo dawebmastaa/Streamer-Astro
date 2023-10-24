@@ -3,25 +3,25 @@ export interface Template {
   description: string;
 };
 const one: Template = {
-  name: "Unearthing History",
-  description: "Join us in exploring the depths of inner adventures and the intricacies of the human mind and emotions.",
+  name: "Discovery",
+  description: "What is the current status of your web presence, vs what your ultimate goals are for it.",
 };
 const two: Template = {
-    name: "Mysteries Explored",
-    description: "Unveil captivating conversations with insightful guests who share their unique perspectives and life stories.",
+    name: "Exploration",
+    description: "What are some current tools/technologies that could be put to use to improve the current status.",
 };
 const three: Template = {
   name: "Creative Sparks",
-  description: "Join us as we dig into the past to uncover forgotten tales and historical gems that shape our present.",
+  description: "What are some 'pain points' in the business operation that modern web tools might address?.",
 };
 const four: Template = {
   name: "Interactive Exploration",
-  description: "Dive into an interactive exploration of ideas, theories, and discoveries. ",
+  description: "What's the tool you've never been able to find, that would save you massive time or money?",
 };
 export const byName = {
   one,
   two,
-    three,
+  three,
   four,
 };
 export const features = Object.values(byName);

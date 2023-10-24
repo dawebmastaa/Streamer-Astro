@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Testimonials from "@/components/landing/Testimonials.astro";
-import Hero from "@/components/landing/Hero.astro";
+import Block from "@/components/global/Block.astro";
 import { AstroSeo } from "@astrolib/seo";
 
 import { getAllPosts } from "../../lib/cosmic";
@@ -11,7 +11,7 @@ const data = await getAllPosts();
 
 <AstroSeo
   title="Rule The Web | Blog"
-  description="Your blog home page description goes here"
+  description="We can hard code this one and only this one"
   openGraph={{
     url: "https://streamer.lexingtonthemes.com",
     title: "Open Graph Title",
@@ -43,7 +43,7 @@ const data = await getAllPosts();
   }}
 />
 <BaseLayout>
-    <Hero bgimage="photo-15.jpg" />
+    <Block bgimage="photo-15.jpg" blockheadline="No technical mumbo jumbo here" blockexcerpt="Some quick tips and tricks to increase your website know how." />
     <Posts />
     <Testimonials />
 </BaseLayout>

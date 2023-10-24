@@ -6,7 +6,7 @@ const { bgimage, blockheadline, blockexcerpt } = Astro.props
     <div class="relative isolate overflow-hidden max-w-7xl mx-auto">
       <img
         src={`${bgimage}`}
-        alt=""
+        alt={`${blockheadline}`}
         class="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
       />
   
@@ -14,8 +14,7 @@ const { bgimage, blockheadline, blockexcerpt } = Astro.props
         class="py-32 lg:pt-32 bg-gradient-to-r from-smoke via-smoke/80 h-full px-8 md:px-12 lg:px-32">
         <div class="text-left">
           <span class="text-xs font-bold tracking-wide uppercase text-zinc-500"
-            >The Modern Web</span
-          >
+            >The Modern Web</span>
           <p
             class="mt-8 text-4xl font-semibold lg:text-6xl tracking-tighter text-zinc-900">
             {blockheadline} <span class="md:block text-zinc-500"></span>
