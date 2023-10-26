@@ -4,10 +4,10 @@ import NavLink from "../../components/global/NavLink.astro";
 const data2 = await getAllPages()
 ---
 
-<div class="justify-center w-full mx-auto bg-smoke border-b">
+<div class="sticky top-0 z-40 justify-center w-full mx-auto bg-smoke border-b">
   <div
     x-data="{ open: false }"
-    class="flex flex-col w-full px-8 py-2 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-32 max-w-7xl">
+    class="flex flex-col w-full px-8 py-3 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-32 max-w-7xl">
     <div class="flex flex-row items-center justify-between text-zinc-900">
       <a
         class="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-zinc-900"
@@ -58,10 +58,6 @@ const data2 = await getAllPages()
     <nav
       :class="{'flex': open, 'hidden': !open}"
       class="flex-col items-center flex-grow hidden p-4 px-5 opacity-100 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0">
-
-      <a class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90 md:ml-auto"
-       href="/">Home</a>
-
        {
         data2.map((page) => (
           <NavLink
@@ -82,3 +78,9 @@ const data2 = await getAllPages()
     </nav>
   </div>
 </div>
+
+<style is:global>
+  #about {
+    @apply md:ml-auto;
+  }
+</style>

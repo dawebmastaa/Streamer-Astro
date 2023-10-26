@@ -12,5 +12,18 @@
         "projectManager.vscode.baseFolders": [
             "/media/mikea/86022EF5022EE9BF/web/repos/Streamer-Astro"
         ],
+        "compile-hero.html-output-toggle": false,
+        "compile-hero.jade-output-toggle": false,
+        "compile-hero.javascript-output-toggle": false,
+        "compile-hero.less-output-toggle": false,
+        "compile-hero.pug-output-toggle": false,
+        "compile-hero.sass-output-toggle": false,
+        "compile-hero.typescript-output-toggle": false,
+        "compile-hero.typescriptx-output-toggle": false,
+        "compile-hero.x-compile-files-on-save": false,
+        "compile-hero.x-generate-minified-css": false,
+        "compile-hero.x-generate-minified-js": false,
+        "compile-hero.x-generate-sourcemap-css": false,
+        "compile-hero.x-generate-sourcemap-js": false,
     }
 }

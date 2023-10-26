@@ -4,7 +4,7 @@ import Card from "../../components/global/Card.astro";
 const data = await getAllPosts();
 ---
 
-<section>
+<section class="mb-10">
     <ul class="px-6 grid md:grid-cols-4 gap-8">
       {
         data.map((post) => (

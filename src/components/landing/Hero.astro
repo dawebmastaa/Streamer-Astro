@@ -1,21 +1,20 @@
 ---
-const { bgimage } = Astro.props
+const {bgimage} = Astro.props
 ---
 <section>
   <div class="relative isolate overflow-hidden max-w-7xl mx-auto">
     <img
       src={`${bgimage}`}
-      alt=""
+      alt="Welcome To Rule The Web"
       class="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
     />
 
     <div
       class="py-32 lg:pt-32 bg-gradient-to-r from-smoke via-smoke/80 h-full px-8 md:px-12 lg:px-32">
       <div class="text-left">
-        <span class="text-xs font-bold tracking-wide uppercase text-zinc-500"
-          >The Modern Web</span>
+        <span class="text-xs font-bold tracking-wide uppercase text-zinc-500">The Modern Web</span>
         <p
-          class="mt-8 font-semibold lg:text-6xl tracking-tighter text-zinc-900">
+          class="mt-8 text-4xl font-semibold lg:text-6xl tracking-tighter text-zinc-900">
           A modern, fast and easily <span class="md:block text-zinc-500">
             maintained web presence.</span
           >
