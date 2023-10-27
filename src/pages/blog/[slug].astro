@@ -7,7 +7,7 @@ import { AstroSeo } from "@astrolib/seo";
 import { marked } from 'marked';
 
 export async function getStaticPaths() {
-  const response = await getAllPosts()
+const response = await getAllPosts()
 
   return response.map((post) => {
     return {
