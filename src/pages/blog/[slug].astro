@@ -61,7 +61,7 @@ const content = marked.parse(post.metadata.content);
     <Block bgimage={post.metadata.cover_image.url}, blockheadline={post.title}, blockexcerpt={post.metadata.excerpt} />
     <section>
         <div class="tryit text-4xl text-base text-zinc-500 px-8 mx-auto md:px-12 lg:px-32 max-w-7xl pb-8">
-            <Fragment class="text-base text-zinc-500" set:html={content} />
+            <Fragment set:html={content} />
         </div>
     </section>
   </BaseLayout>
