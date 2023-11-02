@@ -1,5 +1,5 @@
 ---
-const { href, title, body, image } = Astro.props
+const { href, title, body, image, type } = Astro.props
 ---
 <!--
 <li class="bg-white rounded-md shadow-md hover:shadow-xl transition">
@@ -24,7 +24,7 @@ const { href, title, body, image } = Astro.props
         class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
         data-te-ripple-init data-te-ripple-color="light">
         <img src={image} class="w-full" />
-        <a href={`/blog/${href}`}>
+        <a href={`/${type}/${href}`}>
           <div
             class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-400 transition duration-300 ease-in-out hover:opacity-0 bg-[hsla(0,0%,98.4%,.15)]">
           </div>
@@ -36,7 +36,7 @@ const { href, title, body, image } = Astro.props
   <p class="mb-4 pb-2 text-zinc-500">
     {body}
   </p>
-  <a href={`/blog/${href}`} data-te-ripple-init data-te-ripple-color="light"
+  <a href={`/${type}/${href}`} data-te-ripple-init data-te-ripple-color="light"
     class="flex items-center justify-center xl:w-1/2 h-10 px-4 py-2 text-sm transition-all bg-white border border-zinc-300 rounded-lg md:font-semibold text-zinc-600 hover:text-zinc-500">Read
     more&nbsp;→</a>
 </div>

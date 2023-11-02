@@ -51,6 +51,27 @@ export async function getFeaturedPage() {
   return data.object.metadata.post
 }
 
+export async function getAllArticles() {
+  const data2 = await cosmic.objects
+    .find({
+      type: 'articles'
+    })
+    .props('title,slug,metadata,created_at')
+    .depth(2)
+  return data2.objects
+}
+
+export async function getFeaturedArticle() {
+  const data = await cosmic.objects
+    .findOne({
+      type: 'article',
+      slug: 'set-featured-article'
+    })
+    .props('metadata')
+    .depth(2)
+  return data.object.metadata.article
+}
+
 export async function getConfig() {
   const data = await cosmic.objects
     .findOne({ type: 'config', slug: 'config' })

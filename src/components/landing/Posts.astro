@@ -2,6 +2,7 @@
 import { getAllPosts } from "../../lib/cosmic";
 import Card from "../../components/global/Card.astro";
 const data = await getAllPosts();
+const type = 'blog';
 ---
 
 <section class="mb-10">
@@ -13,6 +14,7 @@ const data = await getAllPosts();
             href={post.slug}
             body={post.metadata.excerpt}
             image={post.metadata.cover_image.url}
+            type={type}
           />
         ))
       }

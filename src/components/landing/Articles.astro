@@ -1,0 +1,21 @@
+---
+import { getAllArticles } from "../../lib/cosmic";
+import Card from "../../components/global/Card.astro";
+const data = await getAllArticles();
+const type = 'articles';
+---
+<section class="mb-10">
+    <ul class="px-6 grid md:grid-cols-4 gap-8">
+      {
+        data.map((article) => (
+          <Card
+            title={article.title}
+            href={article.slug}
+            body={article.metadata.description}
+            image={article.metadata.cover_image.url}
+            type={type}
+         />
+        ))
+      }
+    </ul>
+  </section>

@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getAllArticles } from "../../lib/cosmic"
+
+export async function getStaticPaths() {
+  const response = await getAllArticles()
+
+  return response.map((article) => {
+    return {
+      params: { slug: article.slug },
+      props: { article },
+    };
+  });
+}
+const { article } = Astro.props;
+---
+<BaseLayout>
+    <Fragment set:html={article.metadata.article_content} />
+  </BaseLayout>
+
+  <style is:global>
+    p {
+      @apply text-base text-zinc-500;
+    }      
+    h2 {
+      @apply text-4xl font-semibold tracking-tighter text-zinc-900;
+    }
+    </style>
+
+    <style is:inline>
+    h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  img {
+      @apply mx-2 mb-2 h-auto rounded-lg shadow-lg dark:shadow-gray-800;
+    }
+
+    p{
+    margin-top: 2rem;}
+    
+    .tryit > * img {
+      max-width: 40%;
+      float: right;
+    }
+</style>  
