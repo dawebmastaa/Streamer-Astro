@@ -56,8 +56,8 @@ export async function getAllArticles() {
     .find({
       type: 'articles'
     })
-    .props('title,slug,metadata,created_at')
-    .depth(2)
+    .props('title,slug,metadata')
+    .depth(1)
   return data2.objects
 }
 
@@ -67,7 +67,7 @@ export async function getFeaturedArticle() {
       type: 'article',
       slug: 'set-featured-article'
     })
-    .props('metadata')
+    .props('title,slug,metadata')
     .depth(2)
   return data.object.metadata.article
 }

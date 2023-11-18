@@ -5,13 +5,12 @@ import Articles from "../../components/landing/Articles.astro"
 import Testimonials from "../../components/landing/Testimonials.astro";
 import { AstroSeo } from "@astrolib/seo";
 import { getAllArticles } from "../../lib/cosmic";
-import Posts from "../../components/landing/Posts.astro";
 
 const data = await getAllArticles();
 ---
 <AstroSeo
-  title="Rule The Web | Home"
-  description="A completely functional Astro static site generator with Tailwind, AstroSEO, CosmicJS CMS for blog and page management."
+  title="Rule The Web | Articles"
+  description="Easy to understand quick guides regarding web presence topics with a focus on what's impoertant from a business owner's perspective."
   canonical={import.meta.env.SITE}
   openGraph={{
     url: "https://streamer.lexingtonthemes.com",

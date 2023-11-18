@@ -1,6 +1,5 @@
 ---
 import { getAllPages } from "../../lib/cosmic"
-import NavLink from "../../components/global/NavLink.astro";
 const data2 = await getAllPages()
 ---
 
@@ -38,11 +37,7 @@ const data2 = await getAllPages()
       class="flex-col items-center flex-grow hidden p-4 px-5 opacity-100 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0">
        {
         data2.map((page) => (
-          <NavLink
-            title={page.title}
-            href={page.slug}
-            body={page.metadata.description}
-          />
+          <a id={page.slug} class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90" href={`${page.slug}`}>{page.title}</a>
         ))
       }
         

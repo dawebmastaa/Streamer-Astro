@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getAllArticles } from "../../lib/cosmic"
+import { AstroSeo } from "@astrolib/seo";
 
 export async function getStaticPaths() {
   const response = await getAllArticles()
@@ -12,8 +13,13 @@ export async function getStaticPaths() {
     };
   });
 }
+
 const { article } = Astro.props;
 ---
+<AstroSeo
+title={article.title}
+description={article.metadata.article_meta.article_description}
+/>
 <BaseLayout>
     <Fragment set:html={article.metadata.article_content} />
   </BaseLayout>
