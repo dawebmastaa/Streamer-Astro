@@ -6,7 +6,10 @@ const type = 'blog';
 ---
 
 <section class="mb-10">
-    <ul class="px-6 grid md:grid-cols-4 gap-8">
+  <div class="py-6 mx-6 lg:py-8">
+    <p class="text-xs font-bold tracking-wide uppercase text-zinc-500">latest blog posts</p>
+  </div>  
+  <ul class="px-6 grid md:grid-cols-4 gap-8">
       {
         data.map((post) => (
           <Card
