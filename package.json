@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev --site http://localhost:4321",
     "start": "astro dev",
-    "build": "astro build --site https://streamer-astro-jphjk.kinsta.page/",
+    "build": "astro build --site https://ruletheweb.cf/",
     "preview": "astro preview",
     "astro": "astro"
   },
