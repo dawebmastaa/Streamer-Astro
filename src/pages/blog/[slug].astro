@@ -21,7 +21,6 @@ const {post} = Astro.props;
 
 //convert the Markdown to html
 const content = marked.parse(post.metadata.content);
-//const headline = marked.parse(post.title);
 ---
 <AstroSeo
   title={post.title}

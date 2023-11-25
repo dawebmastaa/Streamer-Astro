@@ -1,12 +1,9 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import Testimonials from "@/components/landing/Testimonials.astro";
 import Block from "@/components/global/Block.astro";
+import Testimonials from "@/components/landing/Testimonials.astro";
 import { AstroSeo } from "@astrolib/seo";
-
-import { getAllPosts } from "../../lib/cosmic";
 import Posts from "@/components/landing/Posts.astro";
-const data = await getAllPosts();
 ---
 
 <AstroSeo
@@ -43,7 +40,7 @@ const data = await getAllPosts();
   }}
 />
 <BaseLayout>
-    <Block bgimage="photo-15.jpg" blockheadline="No technical mumbo jumbo here" blockexcerpt="Just some quick tips and tricks to increase your website know how." />
+    <Block bgimage="img/photo-15.jpg" blockheadline="No technical mumbo jumbo here" blockexcerpt="Just some quick tips and tricks to increase your website know how." />
     <Posts />
     <Testimonials />
 </BaseLayout>

@@ -4,9 +4,6 @@ import Block from "../../components/global/Block.astro";
 import Articles from "../../components/landing/Articles.astro"
 import Testimonials from "../../components/landing/Testimonials.astro";
 import { AstroSeo } from "@astrolib/seo";
-import { getAllArticles } from "../../lib/cosmic";
-
-const data = await getAllArticles();
 ---
 <AstroSeo
   title="Rule The Web | Articles"
@@ -43,7 +40,7 @@ const data = await getAllArticles();
   }}
 />
 <BaseLayout>
-    <Block bgimage="newhero4.jpg" blockheadline="Need more info?" blockexcerpt="We got it covered!" />
+    <Block bgimage="img/newhero4.jpg" blockheadline="Need more info?" blockexcerpt="We got it covered!" />
     <Articles />
     <Testimonials />
 </BaseLayout>
