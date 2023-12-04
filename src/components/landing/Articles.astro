@@ -4,11 +4,12 @@ import Card from "../../components/global/Card.astro";
 const data = await getAllArticles();
 const type = 'articles';
 ---
-<section class="bg-zinc-200 mb-10 ring-1 ring-zinc-300">
+<div class="w-full bg-zinc-200 mb-10 ring-1 ring-zinc-300">
+  <div class="mb-10 max-w-7xl mx-auto">
   <div class="py-6 mx-6 lg:py-8">
     <p class="text-xs font-bold tracking-wide uppercase text-zinc-500">latest articles</p>
   </div> 
-    <ul class="px-6 pb-6 grid md:grid-cols-4 gap-8">
+    <ul class="px-6 pb-6 grid md:grid-cols-3 gap-8">
       {
         data.map((article) => (
           <Card
@@ -21,4 +22,5 @@ const type = 'articles';
         ))
       }
     </ul>
-  </section>
+    </div>
+  </div>

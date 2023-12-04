@@ -37,18 +37,18 @@ const data2 = await getAllPages()
       class="flex-col items-center flex-grow hidden p-4 px-5 opacity-100 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0">
        {
         data2.map((page) => (
-          <a id={page.slug} class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90" href={`${page.slug}`}>{page.title}</a>
+          <a id={page.slug} class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90" href={`${page.slug}/`}>{page.title}</a>
         ))
       }
         
        <a class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90"
-        href="/blog">Blog</a>
+        href="/blog/">Blog</a>
 
         <a class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90"
-        href="/articles">Articles</a> 
+        href="/articles/">Articles</a> 
 
       <a class="flex items-center justify-center h-8 px-4 py-2 text-xs transition-all bg-white border border-gray-300 rounded-lg text-zinc-600 hover:text-zinc-500"
-        href="/contact" role="button">
+        href="/contact/" role="button">
         <span>Get Started</span>
       </a>
     </nav>
