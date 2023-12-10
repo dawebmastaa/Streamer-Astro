@@ -7,10 +7,10 @@
     "settings": {
         "projectManager.checkInvalidPathsBeforeListing": false,
         "projectManager.git.baseFolders": [
-            "/media/mikea/86022EF5022EE9BF/web/repos/Streamer-Astro"
+            "/mnt/86022EF5022EE9BF/web/repos/Streamer-Astro"
         ],
         "projectManager.vscode.baseFolders": [
-            "/media/mikea/86022EF5022EE9BF/web/repos/Streamer-Astro"
+            "/mnt/86022EF5022EE9BF/web/repos/Streamer-Astro"
         ],
         "compile-hero.html-output-toggle": false,
         "compile-hero.jade-output-toggle": false,
