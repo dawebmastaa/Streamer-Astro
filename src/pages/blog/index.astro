@@ -2,44 +2,14 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Block from "@/components/global/Block.astro";
 import Testimonials from "@/components/landing/Testimonials.astro";
-import { AstroSeo } from "@astrolib/seo";
+import { SEO } from "astro-seo";
 import Posts from "@/components/landing/Posts.astro";
 ---
-
-<AstroSeo
-  title="Rule The Web | Blog"
-  description="We can hard code this one and only this one"
-  openGraph={{
-    url: "https://streamer.lexingtonthemes.com",
-    title: "Open Graph Title",
-    description: "Open Graph Description",
-    images: [
-      {
-        url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Social open graph",
-        type: "image/jpeg",
-      },
-      {
-        url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg",
-        width: 4096,
-        height: 4096,
-        alt: "Twitter open graph",
-        type: "image/jpeg",
-      },
-      { url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg" },
-      { url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg" },
-    ],
-    site_name: "Rule The Web",
-  }}
-  twitter={{
-    handle: "@TwitterHandle",
-    site: "@site",
-    cardType: "summary_large_image",
-  }}
-/>
-<BaseLayout>
+<BaseLayout 
+title="Rule The Web | Blog"
+description="Quick and simple tips on improving your web presence."
+keywords="web, web blog, website tips"
+robots="index,follow">
     <Block bgimage="img/photo-15.jpg" headline="No technical mumbo jumbo here" excerpt="Just some quick tips and tricks to increase your website know how." />
     <Posts />
     <Testimonials />

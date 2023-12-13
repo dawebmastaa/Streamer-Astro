@@ -3,18 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev --site http://localhost:4321",
+    "dev": "astro dev --site http://localhost:4321/",
     "start": "astro dev",
     "build": "astro build --site https://www.ruletheweb.cf/",
     "preview": "astro preview",
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.0.0",
-    "@astrojs/tailwind": "^5.0.0",
-    "@astrolib/seo": "^0.6.0",
+    "@astrojs/sitemap": "^3.0.3",
+    "@astrojs/tailwind": "^5.0.3",
     "@tailwindcss/forms": "^0.5.6",
-    "astro": "^3.6.4"
+    "astro": "^4.0.4"
   },
   "dependencies": {
     "@cosmicjs/sdk": "^1.0.10",

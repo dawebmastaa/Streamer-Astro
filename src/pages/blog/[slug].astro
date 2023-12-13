@@ -2,8 +2,6 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Block from "@/components/global/Block.astro";
 import { getAllPosts } from "../../lib/cosmic";
-
-import { AstroSeo } from "@astrolib/seo";
 import { marked } from 'marked';
 
 export async function getStaticPaths() {
@@ -22,11 +20,12 @@ const {post} = Astro.props;
 //convert the Markdown to html
 const content = marked.parse(post.metadata.content);
 ---
-<AstroSeo
-  title={post.title}
-  description={post.exerpt}
-/>
-<BaseLayout>
+<BaseLayout
+title={post.title}
+description={post.exerpt}
+keywords=""
+robots="index, follow"
+>
     <Block bgimage={post.metadata.cover_image.url}, blockheadline={post.title}, blockexcerpt={post.metadata.excerpt} />
     <section>
         <div class="tryit text-base text-zinc-500 px-8 mx-auto md:px-12 lg:px-32 max-w-7xl pb-8">

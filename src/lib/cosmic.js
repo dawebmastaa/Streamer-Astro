@@ -36,7 +36,6 @@ export async function getAllPages() {
       type: 'pages'
     })
     .props('title,slug,metadata,created_at')
-    .depth(2)
   return data2.objects
 }
 
