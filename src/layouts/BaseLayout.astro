@@ -2,7 +2,6 @@
 import BaseHead from "@/components/BaseHead.astro";
 import Navigation from "@/components/global/Navigation.astro";
 import Footer from "@/components/global/Footer.astro";
-
 const { title, description, keywords, robots } = Astro.props;
 ---
 
@@ -15,15 +14,13 @@ const { title, description, keywords, robots } = Astro.props;
     keywords={keywords}
     robots={robots}
     />
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="de778d90-7910-4752-8ec5-c579b81d3df1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   </head>
 
   <body class="bg-smoke">
     <Navigation />
     <slot />
     <Footer />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </body>
 </html>

@@ -39,6 +39,19 @@ export async function getAllPages() {
   return data2.objects
 }
 
+export async function getNavLinks() {
+  const data2 = await cosmic.objects
+    .find({
+      type: 'pages',"$and": [
+        {
+            "metadata.mainnav": true
+        }
+    ]
+    })
+    .props('title,slug,metadata')
+  return data2.objects
+}
+
 export async function getFeaturedPage() {
   const data = await cosmic.objects
     .findOne({
