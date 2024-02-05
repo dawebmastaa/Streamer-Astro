@@ -42,6 +42,12 @@
                 "username": "root",
                 "database": "shell",
                 "password": ""
+            },
+            {
+                "previewLimit": 50,
+                "driver": "SQLite",
+                "name": "Nginx Shell",
+                "database": "/var/www/shell/conf/shell.sqlite"
             }
         ],
     }
