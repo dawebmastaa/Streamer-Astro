@@ -15,7 +15,7 @@ const type = 'blog';
             title={post.title}
             href={post.slug}
             body={post.metadata.excerpt}
-            image={post.metadata.cover_image.url}
+            image={post.metadata.cover_image.imgix_url + '?w=400'}
             type={type}
           />
         ))

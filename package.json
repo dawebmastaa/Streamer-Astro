@@ -10,13 +10,13 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/forms": "^0.5.6",
-    "astro": "^4.3.1"
+    "astro": "^4.12.2"
   },
   "dependencies": {
-    "@cosmicjs/sdk": "^1.0.10",
+    "@cosmicjs/sdk": "^1.0.11",
     "cosmicjs": "^4.3.7",
     "marked": "^9.1.6"
   }
