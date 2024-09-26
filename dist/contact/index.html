@@ -25,7 +25,7 @@
         
         <!-- Modal inner -->
         <div
-        class="sm:w-1/2 med:w-1/3 px-0 py-0 mx-auto text-left bg-white rounded"
+        class="sm:w-1/2 med:w-1/3 p-0 mx-auto text-left bg-white rounded"
         @click.away="showModal = false"
         x-transition:enter="motion-safe:ease-out duration-300"
         x-transition:enter-start="opacity-0 scale-90"
@@ -73,10 +73,11 @@
         </div>
 
         <!-- content -->
-        <!-- ScheduleOnce embed START -->
-<div id="SOIDIV_MikeAlberts" data-so-page="MikeAlberts" data-height="510" data-style="border: 0px solid #ffffff; min-width: 290px; max-width: 900px;" data-psz="00"></div>
-<script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js"></script>
-<!-- ScheduleOnce embed END -->
+        <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget align-top p-0 m-0 text-zinc-500 text-xs justify-center" data-url="https://calendly.com/rule-the-web/free-consultation?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px; height:500px;margin-top: 0;padding-top:0;">
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</div>
+<!-- Calendly inline widget end -->
         </div>
     </div>
 </div>
