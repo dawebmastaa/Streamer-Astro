@@ -7,10 +7,10 @@
     "settings": {
         "projectManager.checkInvalidPathsBeforeListing": false,
         "projectManager.git.baseFolders": [
-            "/media/mikea/86022EF5022EE9BF/web/repos"
+            "/home/mikes/work/web/repos"
         ],
         "projectManager.vscode.baseFolders": [
-            "/media/mikea/86022EF5022EE9BF/web/repos"
+            "/home/mikes/work/web/repos"
         ],
         "editor.fontFamily": "'Jetbrains Mono', 'Droid Sans Mono', 'monospace'",
         "editor.fontSize": 14,

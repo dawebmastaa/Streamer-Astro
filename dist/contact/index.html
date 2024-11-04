@@ -52,7 +52,7 @@
 </div>
 
         <!-- Modal2 -->
-        <div class="p-0 m-0 fixed inset-0 flex items-center justify-center overflow-auto bg-smoke bg-opacity-50"  x-show="showModal2" style="display: none;">
+        <div class="w-screen p-0 m-0 fixed inset-0 flex items-center justify-center overflow-auto bg-smoke bg-opacity-50"  x-show="showModal2" style="display: none;">
         
         <!-- Modal inner -->
         <div
@@ -73,12 +73,24 @@
         </div>
 
         <!-- content -->
-        <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget align-top p-0 m-0 text-zinc-500 text-xs justify-center" data-url="https://calendly.com/rule-the-web/free-consultation?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px; height:500px;margin-top: 0;padding-top:0;">
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-</div>
-<!-- Calendly inline widget end -->
-        </div>
+        <div class="p-0 m-0 text-zinc-500 text-xs justify-center">
+          <!-- Cal inline embed code begins -->
+<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "60min", {origin:"https://cal.com"});
+
+  Cal.ns["60min"]("inline", {
+    elementOrSelector:"#my-cal-inline",
+    config: {"layout":"month_view","theme":"light"},
+    calLink: "mike-alberts-b1p5j2/60min",
+  });
+
+  Cal.ns["60min"]("ui", {"theme":"light","styles":{"branding":{"brandColor":"#e9e9eb"}},"hideEventTypeDetails":true,"layout":"month_view"});
+  </script>
+  <!-- Cal inline embed code ends -->
+       </div>
+     </div>
     </div>
 </div>
       </div>

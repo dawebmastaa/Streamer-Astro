@@ -17,6 +17,7 @@ pnpm-debug.log*
 .env.local
 
 Streamer-Astro.code-workspace
+.astro/
 
 # macOS-specific files
 .DS_Store
