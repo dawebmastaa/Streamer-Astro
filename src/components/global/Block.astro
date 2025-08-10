@@ -2,7 +2,7 @@
 const { bgimage, headline, excerpt } = Astro.props
 ---
 <section>
-    <div class="relative isolate overflow-hidden max-w-7xl mx-auto">
+    <div class="relative isolate overflow-hidden max-w-8xl mx-auto">
       <img
         src={`${bgimage}`}
         alt={`${headline}`}
@@ -11,11 +11,11 @@ const { bgimage, headline, excerpt } = Astro.props
   
       <div class="py-9 md:pt-12 lg:py-24 h-full px-8 md:px-12 lg:px-32 bg-gradient-to-r from-smoke via-smoke/80">
         <div class="text-left">
-          <span class="text-xs font-bold tracking-wide uppercase text-zinc-500">The Modern Web</span>
-          <p class="mt-8 text-4xl font-semibold lg:text-6xl tracking-tighter text-zinc-900">
+          <span class="text-sm font-bold tracking-wide uppercase text-zinc-500">The Modern Web</span>
+          <p class="mt-8 text-4xl font-semibold lg:text-6xl tracking-tighter text-zinc-900 capitalize">
             {headline} <span class="md:block text-zinc-500"></span>
           </p>
-          <p class="max-w-md mt-4 text-base text-zinc-500">{excerpt}</p>
+          <p class="max-w-md mt-4 text-zinc-500 text-lg">{excerpt}</p>
           <div class="flex flex-col items-center gap-3 mt-10 md:flex-row">
             <a class="flex items-center justify-center w-full h-10 px-4 py-1 text-sm font-semibold text-white transition-all rounded-lg bg-gradient-to-b from-zinc-500 hover:to-zinc-700 to-zinc-600 md:w-auto"
               href="/contact/">Contact Us Here</a>

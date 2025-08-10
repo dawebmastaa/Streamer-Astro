@@ -2,10 +2,10 @@
 import { getNavLinks } from "../../lib/cosmic";
 const data2 = await getNavLinks();
 ---
-<div class="top-0 z-40 justify-center w-full mx-auto bg-smoke border-b">
-  <div x-data="{ open: false }" class="flex flex-col w-full px-8 py-3 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-32 max-w-7xl">
+<div class="z-40 justify-center w-full mx-auto bg-smoke border-b">
+  <div x-data="{ open: false }" class="flex flex-col w-full px-8 py-4 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-32">
     <div class="flex flex-row items-center justify-between">
-      <a class="inline-flex items-center gap-0" href="/"><img src="img/logo3.png" /></a>
+      <a class="inline-flex items-center gap-0" href="/"><img src="img/logo3.png" class="h-14 w-auto" /></a>
       <button
         class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
         @click="open = !open">
@@ -36,17 +36,17 @@ const data2 = await getNavLinks();
       class="flex-col items-center flex-grow hidden p-4 px-5 opacity-100 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0">
        {
         data2.map((page) => (
-          <a id={page.slug} class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90" href={`${page.slug}/`}>{page.title}</a>
+          <a id={page.slug} class="px-4 py-2 text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90" href={`${page.slug}/`}>{page.title}</a>
         ))
       }
         
-       <a class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90"
+       <a class="px-4 py-2 text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90"
         href="/blog/">Blog</a>
 
-        <a class="px-4 py-2 text-xs text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90"
+        <a class="px-4 py-2 text-gray-500 hover:text-zinc-900 focus:outline-none focus:shadow-none focus:text-zinc-900/90"
         href="/articles/">Articles</a> 
 
-      <a class="flex items-center justify-center h-8 px-4 py-2 text-xs transition-all bg-white border border-gray-300 rounded-lg text-zinc-600 hover:text-zinc-500"
+      <a class="flex items-center justify-center h-8 px-4 py-2 transition-all bg-white border border-gray-300 rounded-lg text-zinc-600 hover:text-zinc-500"
         href="/contact/" role="button">
         <span>Get Started</span>
       </a>

@@ -13,7 +13,7 @@
             "/home/mikes/work/web/repos"
         ],
         "editor.fontFamily": "'Jetbrains Mono', 'Droid Sans Mono', 'monospace'",
-        "editor.fontSize": 14,
+        "editor.fontSize": 16,
         "compile-hero.html-output-toggle": false,
         "compile-hero.jade-output-toggle": false,
         "compile-hero.javascript-output-toggle": false,

@@ -2,10 +2,9 @@
 const { href, title, body, image, type } = Astro.props
 ---
 <div class="mb-0">
-  <div class="ring-1 ring-zinc-300 relative block rounded-lg bg-white shadow-xl hover:shadow-md transition dark:bg-zinc-100">
+  <div class="mb-4 ring-1 ring-zinc-300 relative block rounded-lg shadow-md hover:shadow-sm transition bg-zinc-100">
     <div class="flex">
-      <div class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
-        data-te-ripple-init data-te-ripple-color="light">
+      <div class="w-full relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20">
         <img src={`${image}`} class="w-full" />
         <a href={`/${type}/${href}`}>
           <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-400 transition duration-200 ease-in-out hover:opacity-0 bg-[hsla(0,0%,98.4%,.15)]">
@@ -13,12 +12,11 @@ const { href, title, body, image, type } = Astro.props
         </a>
       </div>
     </div>
-<div class="p-6">
-  <h5 class="mb-3 font-semibold text-xl">{title}</h5>
-  <p class="mb-4 pb-2 text-zinc-500">
+<div class="p-6 pb-6">
+  <h5 class="mb-2 font-bold text-lg">{title}</h5>
+  <p class="mb-2 pb-2 text-zinc-500">
     {body}
   </p>
-  <a href={`/${type}/${href}`} data-te-ripple-init data-te-ripple-color="light"
-    class="flex items-center justify-center xl:w-1/2 h-10 px-4 py-2 text-sm transition-all bg-white border border-zinc-300 rounded-lg md:font-semibold text-zinc-600 hover:text-zinc-500">
+  <a href={`/${type}/${href}`} class="xl:w-1/2 h-10 px-2 py-2 text-sm transition-all bg-white border border-zinc-300 rounded-lg md:font-semibold text-zinc-600 hover:text-zinc-500">
     Read more</a>
 </div>

@@ -4,11 +4,11 @@ import Card from "../../components/global/Card.astro";
 const data = await getAllPosts();
 const type = 'blog';
 ---
-<div class="mb-10 max-w-7xl mx-auto">
+<div class="mb-10 mx-auto">
   <div class="py-6 mx-6 lg:py-8">
     <p class="text-xs font-bold tracking-wide uppercase text-zinc-500">latest blog posts</p>
   </div>  
-  <ul class="px-4 grid md:grid-cols-4 gap-6">
+  <div class="px-4 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {
         data.map((post) => (
           <Card
@@ -20,5 +20,5 @@ const type = 'blog';
           />
         ))
       }
-    </ul>
+    </div>
   </div>
