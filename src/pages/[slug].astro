@@ -17,7 +17,6 @@ const { page } = Astro.props;
 <BaseLayout
 title={page.metadata.page_title}
 description={page.metadata.page_description}
-keywords={page.metadata.page_keywords}
 robots={page.metadata.page_robots}
 >
     <Fragment set:html={page.metadata.page_content} />
