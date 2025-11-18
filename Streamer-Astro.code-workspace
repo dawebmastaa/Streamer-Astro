@@ -13,42 +13,6 @@
             "/home/mikes/work/web/repos"
         ],
         "editor.fontFamily": "'Jetbrains Mono', 'Droid Sans Mono', 'monospace'",
-        "editor.fontSize": 16,
-        "compile-hero.html-output-toggle": false,
-        "compile-hero.jade-output-toggle": false,
-        "compile-hero.javascript-output-toggle": false,
-        "compile-hero.less-output-toggle": false,
-        "compile-hero.pug-output-toggle": false,
-        "compile-hero.sass-output-toggle": false,
-        "compile-hero.typescript-output-toggle": false,
-        "compile-hero.typescriptx-output-toggle": false,
-        "compile-hero.x-compile-files-on-save": false,
-        "compile-hero.x-generate-minified-css": false,
-        "compile-hero.x-generate-minified-js": false,
-        "compile-hero.x-generate-sourcemap-css": false,
-        "compile-hero.x-generate-sourcemap-js": false,
-        "sqltools.disableNodeDetectNotifications": true,
-        "sqltools.connections": [
-            {
-                "mysqlOptions": {
-                    "authProtocol": "default",
-                    "enableSsl": "Disabled"
-                },
-                "previewLimit": 50,
-                "server": "localhost",
-                "port": 3306,
-                "driver": "MySQL",
-                "name": "Shell on MySQL Local",
-                "username": "root",
-                "database": "shell",
-                "password": ""
-            },
-            {
-                "previewLimit": 50,
-                "driver": "SQLite",
-                "name": "Nginx Shell",
-                "database": "/var/www/shell/conf/shell.sqlite"
-            }
-        ],
+        "editor.fontSize": 17,
     }
 }

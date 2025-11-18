@@ -13,24 +13,17 @@ import { features } from "../../data/features.json";
       <p class="mt-4 text-base text-zinc-500">Lean, mean selling machines for everyone!</p>
     </div>
 
-    <ol
-      role="list"
-      class="grid mt-12 lg:mt-14 grid-cols-1 lg:grid-cols-4 gap-6">
+    <ol role="list" class="grid mt-12 lg:mt-14 grid-cols-1 lg:grid-cols-4 gap-6">
       {
         features.map((template) => (
           <>
-            <li>
-              <div class="sm:flex">
-                <div>
-                  <h4 class="text-lg font-semibold text-zinc-900">
+            <li> 
                     {template.name}
                   </h4>
 
                   <p class="mt-2 text-sm text-zinc-600">
                     {template.description}
                   </p>
-                </div>
-              </div>
             </li>
           </>
         ))
