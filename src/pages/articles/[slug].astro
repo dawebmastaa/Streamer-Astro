@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 }
 const { article } = Astro.props;
 ---
-<BaseLayout 
+<BaseLayout
 title={article.title}
 description={article.metadata.article_meta.article_description}
 >
@@ -24,7 +24,7 @@ description={article.metadata.article_meta.article_description}
   <style is:global>
     p {
       @apply text-base text-zinc-500;
-    }      
+    }
     h2 {
       @apply text-4xl font-semibold tracking-tighter text-zinc-900;
     }
@@ -42,9 +42,9 @@ description={article.metadata.article_meta.article_description}
 
     p{
     margin-top: 2rem;}
-    
+
     .tryit > * img {
       max-width: 40%;
       float: right;
     }
-</style>  
+</style>

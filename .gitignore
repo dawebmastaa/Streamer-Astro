@@ -19,5 +19,8 @@ pnpm-debug.log*
 Streamer-Astro.code-workspace
 .astro/
 
+#preview pages
+preview.astro
+
 # macOS-specific files
 .DS_Store
