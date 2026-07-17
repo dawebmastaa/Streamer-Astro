@@ -6,9 +6,6 @@
     ],
     "settings": {
         "projectManager.checkInvalidPathsBeforeListing": false,
-        "projectManager.git.baseFolders": [
-            "/home/mikes/work/web/repos"
-        ],
         "projectManager.vscode.baseFolders": [
             "/home/mikes/work/web/repos"
         ],
