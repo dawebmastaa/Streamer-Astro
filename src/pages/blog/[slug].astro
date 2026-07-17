@@ -31,7 +31,7 @@ const content = marked.parse(post.metadata.content);
 <BaseLayout
   title={post.title}
   description={post.exerpt}
-  robots="index, follow"
+  robots="noindex, nofollow"
 >
   <Block
     bgimage={post.metadata.cover_image.url},
