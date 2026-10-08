@@ -16,7 +16,7 @@ pnpm-debug.log*
 .env.production
 .env.local
 
-Streamer-Astro.code-workspace
+.code-workspace
 .astro/
 
 #preview pages
